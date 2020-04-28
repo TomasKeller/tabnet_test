@@ -8,6 +8,7 @@ run:
 python train_tabnet.py --csv-path data/np.csv --target-name "is_NP"  --task classification
 
 modified the train_tabnet.py to calcualte AUC metric
+
 optimize parameters:
 python opt_tabnet.py --csv-path data/np.csv --target-name "is_NP"  --task classification
 
