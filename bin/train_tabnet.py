@@ -360,7 +360,7 @@ def main(csv_path, target_name, task='classification', model_name='tabnet', tb_l
         if (step - best_val_step) > early_stop_steps:
             break
 
-        y_pred = prediction_test[:, 0].eval()
+        y_pred = prediction_test[:, 1].eval()
         y = label_test_batch.eval()
         fpr, tpr, _ = roc_curve(y, y_pred)
 
